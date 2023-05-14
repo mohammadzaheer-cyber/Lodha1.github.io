@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.show {
+  display: block !important;
+}
+
+.banner_section {
+  background-image: url(../images/banner/banner.webp) !important;
+  width: 100vw;
+  background-size: cover;
+}
+.banner_section .container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.banner_section .container header .logo {
+  width: 175px;
+  padding: 20px 0 20px 0;
+}
+.banner_section .container header .logo img {
+  width: 100%;
+}
+.banner_section .container header .side {
+  display: contents;
+}
+.banner_section .container header .side .ivr {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  align-items: center;
+  display: none;
+  justify-content: center;
+}
+.banner_section .container header .side .toggle {
+  right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.banner_section .container .menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.banner_section .container .menu .menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner_section .container .menu .menu-content ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+.banner_section .container .menu .menu-content ul li a {
+  text-decoration: none;
+  color: #9B802E;
+  font-size: 20px;
+}
+.banner_section .container .menu .menu-content ul li a:hover {
+  color: #D9D9D9;
+}
+.banner_section .container .banner-content {
+  width: 100%;
+}
+.banner_section .container .banner-content .content {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.banner_section .container .banner-content .content .content1 {
+  padding: 10px;
+  color: #D9D9D9;
+}
+.banner_section .container .banner-content .content .content1 h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.banner_section .container .banner-content .content .content1 p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.banner_section .container .banner-content .content ul {
+  display: flex;
+  flex-direction: row;
+}
+.banner_section .container .banner-content .content ul li {
+  list-style: none;
+  background-color: #D9D9D9;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.banner_section .container .banner-content .content ul li:hover {
+  color: #9B802E;
+}
+
+@media (min-width: 768px) {
+  .banner_section {
+    background-image: url(../images/banner/banner.webp) !important;
+    height: 100vh;
+    width: 100vw;
+    background: fixed;
+    background-size: cover;
+  }
+  .banner_section .container header {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .banner_section .container header .side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_section .container header .side .main-ivr {
+    position: relative;
+    width: 170px;
+    border: 1px solid #9B802E;
+    border-radius: 25px;
+  }
+  .banner_section .container header .side .main-ivr .ivr {
+    display: flex;
+  }
+  .banner_section .container header .side .toggle {
+    position: relative;
+    left: 35px;
+  }
+  .banner_section .container .menu {
+    width: 320px;
+  }
+  .banner_section .container .banner-content .content {
+    padding: 0;
+    width: 350px;
+  }
+  .banner_section .container .banner-content .banner-form {
+    height: 375px;
+    width: 356px;
+    border: 1px solid #fff;
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?g6tot6");
+  src: url("../fonts/icomoon.eot?g6tot6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?g6tot6") format("truetype"), url("../fonts/icomoon.woff?g6tot6") format("woff"), url("../fonts/icomoon.svg?g6tot6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-badminton:before {
+  content: "\e900";
+}
+
+.icon-swimming:before {
+  content: "\e901";
+}
+
+.icon-gym:before {
+  content: "\e902";
+}
+
+.icon-call:before {
+  content: "\e903";
+}/*# sourceMappingURL=style.css.map */
