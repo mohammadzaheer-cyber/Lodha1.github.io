@@ -53,6 +53,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   display: none;
+  z-index: 1;
 }
 .banner_section .container .menu .menu-content {
   display: flex;
@@ -98,6 +99,8 @@
 .banner_section .container .banner-content .content ul {
   display: flex;
   flex-direction: row;
+  top: 10px;
+  position: relative;
 }
 .banner_section .container .banner-content .content ul li {
   list-style: none;
@@ -110,6 +113,83 @@
 .banner_section .container .banner-content .content ul li:hover {
   color: #9B802E;
 }
+.banner_section .container .banner-content .banner-form {
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  text-align: center;
+}
+.banner_section .container .banner-content .banner-form .heading {
+  color: #9B802E;
+  font-size: 24px;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.banner_section .container .banner-content .banner-form .heading b {
+  font-size: 32px;
+}
+.banner_section .container .banner-content .banner-form .heading span {
+  font-size: 32px;
+  color: #fff;
+}
+.banner_section .container .banner-content .banner-form .heading .cr {
+  font-size: 24px;
+  color: #fff;
+}
+.banner_section .container .banner-content .banner-form .form {
+  padding: 8px;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 24px;
+}
+.banner_section .container .banner-content .banner-form .form p {
+  color: #fff;
+}
+.banner_section .container .banner-content .banner-form .form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 24px;
+}
+.banner_section .container .banner-content .banner-form .form span {
+  color: #fff;
+  width: 20%;
+}
+.banner_section .container .banner-content .banner-form .form button {
+  width: 100%;
+  background: #9B802E;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px;
+}
+.banner_section .container .banner-content .banner-form .form .name_area {
+  display: flex;
+}
+.banner_section .container .banner-content .banner-form .form .name_area p {
+  width: 10%;
+  font-size: 24px;
+  border: 1px solid;
+  text-align: center;
+  padding: 7px 0 0 0;
+  margin-top: 24px;
+}
+.banner_section .container .banner-content .banner-form .form .name_area .name {
+  width: 90%;
+}
+.banner_section .container .banner-content .banner-form .form .number {
+  display: flex;
+}
+.banner_section .container .banner-content .banner-form .form .number .count_code {
+  width: 25%;
+}
+.banner_section .container .banner-content .banner-form .form .number .num {
+  width: 75%;
+}
 
 @media (min-width: 768px) {
   .banner_section {
@@ -118,6 +198,10 @@
     width: 100vw;
     background: fixed;
     background-size: cover;
+  }
+  .banner_section .container {
+    background: fixed linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
+    height: 100vh;
   }
   .banner_section .container header {
     width: 100%;
@@ -144,20 +228,37 @@
   .banner_section .container .menu {
     width: 320px;
   }
+  .banner_section .container .banner-content {
+    display: flex;
+  }
   .banner_section .container .banner-content .content {
     padding: 0;
-    width: 350px;
+    width: 39%;
+    position: relative;
+    left: 185px;
+    top: 90px;
+  }
+  .banner_section .container .banner-content .content .content1 h4 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+  .banner_section .container .banner-content .content .content1 p {
+    font-size: 24px;
+    line-height: 28px;
   }
   .banner_section .container .banner-content .banner-form {
-    height: 375px;
-    width: 356px;
+    width: 320px;
     border: 1px solid #fff;
+    position: relative;
+    left: 340px;
+    top: 100px;
+    border-radius: 20px;
   }
 }
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?g6tot6");
-  src: url("../fonts/icomoon.eot?g6tot6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?g6tot6") format("truetype"), url("../fonts/icomoon.woff?g6tot6") format("woff"), url("../fonts/icomoon.svg?g6tot6#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?rb5lt9");
+  src: url("../fonts/icomoon.eot?rb5lt9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rb5lt9") format("truetype"), url("../fonts/icomoon.woff?rb5lt9") format("woff"), url("../fonts/icomoon.svg?rb5lt9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -174,6 +275,43 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?g6tot6");
+  src: url("../fonts/icomoon.eot?g6tot6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?g6tot6") format("truetype"), url("../fonts/icomoon.woff?g6tot6") format("woff"), url("../fonts/icomoon.svg?g6tot6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-] [class^=icon-], [class^=icon-] [class*=" icon-"], [class*=" icon-"] [class^=icon-], [class*=" icon-"] [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^=icon-] .icon-badminton:before, [class*=" icon-"] .icon-badminton:before {
+  content: "\e900";
+}
+[class^=icon-] .icon-swimming:before, [class*=" icon-"] .icon-swimming:before {
+  content: "\e901";
+}
+[class^=icon-] .icon-gym:before, [class*=" icon-"] .icon-gym:before {
+  content: "\e902";
+}
+[class^=icon-] .icon-call:before, [class*=" icon-"] .icon-call:before {
+  content: "\e903";
+}
+
+.icon-user:before {
+  content: "\e904";
 }
 
 .icon-badminton:before {

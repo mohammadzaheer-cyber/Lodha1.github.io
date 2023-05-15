@@ -7,7 +7,7 @@
 
     .container {
 
-        // background: rgba(0, 0, 0, 0.6);
+
 
         header {
             display: flex;
@@ -57,6 +57,7 @@
             height: 100vh;
             background: rgba(0, 0, 0, 0.8);
             display: none;
+            z-index: 1;
 
             .menu-content {
                 display: flex;
@@ -87,38 +88,41 @@
             }
         }
 
-        .banner-content{
+        .banner-content {
 
             width: 100%;
 
-            .content{
+            .content {
 
                 padding: 20px;
+
                 // background: rgba(0, 0, 0, 0.6);
-                .content1{
+                .content1 {
 
                     padding: 10px;
                     color: $secondary-color;
 
-                    h4{
+                    h4 {
                         font-size: 28px;
                         font-weight: 600;
                         line-height: 44px;
                     }
 
-                    p{
+                    p {
                         font-size: 18px;
                         font-weight: 300;
                         line-height: 28px;
                     }
                 }
 
-                ul{
+                ul {
 
                     display: flex;
                     flex-direction: row;
+                    top: 10px;
+                    position: relative;
 
-                    li{
+                    li {
                         list-style: none;
                         // border: 1px solid ;
                         background-color: $secondary-color;
@@ -127,10 +131,106 @@
                         margin-left: 10px;
                         cursor: pointer;
 
-                        &:hover{
+                        &:hover {
                             color: $primary-Color;
                         }
                     }
+                }
+            }
+
+            .banner-form {
+                position: absolute;
+                background-color: #000000;
+                width: 100%;
+                text-align: center;
+
+                .heading {
+                    color: $primary-Color;
+                    font-size: 24px;
+                    padding: 20px;
+                    text-transform: capitalize;
+
+                    b {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        font-size: 32px;
+                        color: #fff;
+                    }
+
+                    .cr {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+
+                .form {
+
+                    padding: 8px;
+                    text-align: left;
+                    margin-top: 10px;
+                    padding-bottom: 24px;
+
+                    p {
+                        color: #fff;
+                    }
+
+                    input {
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #fff;
+                        background: transparent;
+                        font-size: 16px;
+                        padding: 10px;
+                        margin-top: 24px;
+                    }
+
+                    span {
+                        color: #fff;
+                        width: 20%;
+                    }
+
+                    button {
+                        width: 100%;
+                        background: $primary-Color;
+                        border: 1px solid #fff;
+                        margin-top: 40px;
+                        font-size: 24px;
+                        color: #fff;
+                        padding: 10px;
+                        // border-radius: 50px;
+                    }
+
+                    .name_area {
+
+                        display: flex;
+                        p {
+                            width: 10%;
+                            font-size: 24px;
+                            border: 1px solid;
+                            text-align: center;
+                            padding: 7px 0 0 0;
+                            margin-top: 24px;
+                        }
+
+                        .name {
+                            width: 90%;
+                        }
+                    }
+
+                    .number{
+                        display: flex;
+                        .count_code{
+                            width: 25%;
+                        }
+
+                        .num{
+                            width: 75%;
+                        }
+                    }
+
+                    
                 }
             }
         }
@@ -148,6 +248,9 @@
         background-size: cover;
 
         .container {
+
+            background: fixed linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.0));
+            height: 100vh;
 
             header {
                 width: 100%;
@@ -181,18 +284,40 @@
                 width: 320px;
             }
 
-            .banner-content{
+            .banner-content {
 
-                .content{
+                display: flex;
+
+                .content {
 
                     padding: 0;
-                    width: 350px;
+                    width: 39%;
+                    position: relative;
+                    left: 185px;
+                    top: 90px;
+
+                    .content1 {
+
+                        h4 {
+                            font-size: 48px;
+                            line-height: 70px;
+                        }
+
+                        p {
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+                    }
                 }
 
-                .banner-form{
-                    height: 375px;
-                    width: 356px;
+                .banner-form {
+                    // height: 375px;
+                    width: 320px;
                     border: 1px solid #fff;
+                    position: relative;
+                    left: 340px;
+                    top: 100px;
+                    border-radius: 20px;
                 }
             }
         }
