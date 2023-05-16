@@ -106,12 +106,14 @@
                         font-size: 28px;
                         font-weight: 600;
                         line-height: 44px;
+                        font-family: $primary-font;
                     }
 
                     p {
                         font-size: 18px;
                         font-weight: 300;
                         line-height: 28px;
+                        font-family: $primary-font;
                     }
                 }
 
@@ -139,7 +141,7 @@
             }
 
             .banner-form {
-                position: absolute;
+                position: relative;
                 background-color: #000000;
                 width: 100%;
                 text-align: center;
@@ -147,9 +149,12 @@
                 .heading {
                     color: $primary-Color;
                     font-size: 24px;
-                    padding: 20px;
+                    padding: 8px;
                     text-transform: capitalize;
 
+                    p{
+                        line-height: 42px;
+                    }
                     b {
                         font-size: 32px;
                     }
@@ -174,6 +179,7 @@
 
                     p {
                         color: #fff;
+                        line-height: 16px;
                     }
 
                     input {
@@ -182,7 +188,7 @@
                         border: 1px solid #fff;
                         background: transparent;
                         font-size: 16px;
-                        padding: 10px;
+                        padding: 8px;
                         margin-top: 24px;
                         color: #fff;
                     }
@@ -199,7 +205,7 @@
                         margin-top: 40px;
                         font-size: 24px;
                         color: #fff;
-                        padding: 10px;
+                        padding: 8px;
                         // border-radius: 50px;
                     }
 

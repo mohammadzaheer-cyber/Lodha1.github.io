@@ -2,10 +2,90 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Hind", serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .show {
   display: block !important;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?rb5lt9");
+  src: url("../fonts/icomoon.eot?rb5lt9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rb5lt9") format("truetype"), url("../fonts/icomoon.woff?rb5lt9") format("woff"), url("../fonts/icomoon.svg?rb5lt9#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?g6tot6");
+  src: url("../fonts/icomoon.eot?g6tot6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?g6tot6") format("truetype"), url("../fonts/icomoon.woff?g6tot6") format("woff"), url("../fonts/icomoon.svg?g6tot6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-] [class^=icon-], [class^=icon-] [class*=" icon-"], [class*=" icon-"] [class^=icon-], [class*=" icon-"] [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^=icon-] .icon-badminton:before, [class*=" icon-"] .icon-badminton:before {
+  content: "\e900";
+}
+[class^=icon-] .icon-swimming:before, [class*=" icon-"] .icon-swimming:before {
+  content: "\e901";
+}
+[class^=icon-] .icon-gym:before, [class*=" icon-"] .icon-gym:before {
+  content: "\e902";
+}
+[class^=icon-] .icon-call:before, [class*=" icon-"] .icon-call:before {
+  content: "\e903";
+}
+
+.icon-user:before {
+  content: "\e904";
+}
+
+.icon-badminton:before {
+  content: "\e900";
+}
+
+.icon-swimming:before {
+  content: "\e901";
+}
+
+.icon-gym:before {
+  content: "\e902";
+}
+
+.icon-call:before {
+  content: "\e903";
 }
 
 .banner_section {
@@ -90,11 +170,13 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 44px;
+  font-family: "Hind", serif;
 }
 .banner_section .container .banner-content .content .content1 p {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
+  font-family: "Hind", serif;
 }
 .banner_section .container .banner-content .content ul {
   display: flex;
@@ -114,7 +196,7 @@
   color: #9B802E;
 }
 .banner_section .container .banner-content .banner-form {
-  position: absolute;
+  position: relative;
   background-color: #000000;
   width: 100%;
   text-align: center;
@@ -122,8 +204,11 @@
 .banner_section .container .banner-content .banner-form .heading {
   color: #9B802E;
   font-size: 24px;
-  padding: 20px;
+  padding: 8px;
   text-transform: capitalize;
+}
+.banner_section .container .banner-content .banner-form .heading p {
+  line-height: 42px;
 }
 .banner_section .container .banner-content .banner-form .heading b {
   font-size: 32px;
@@ -144,6 +229,7 @@
 }
 .banner_section .container .banner-content .banner-form .form p {
   color: #fff;
+  line-height: 16px;
 }
 .banner_section .container .banner-content .banner-form .form input {
   width: 100%;
@@ -151,7 +237,7 @@
   border: 1px solid #fff;
   background: transparent;
   font-size: 16px;
-  padding: 10px;
+  padding: 8px;
   margin-top: 24px;
   color: #fff;
 }
@@ -166,7 +252,7 @@
   margin-top: 40px;
   font-size: 24px;
   color: #fff;
-  padding: 10px;
+  padding: 8px;
 }
 .banner_section .container .banner-content .banner-form .form .name_area {
   display: flex;
@@ -256,77 +342,57 @@
     border-radius: 20px;
   }
 }
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?rb5lt9");
-  src: url("../fonts/icomoon.eot?rb5lt9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rb5lt9") format("truetype"), url("../fonts/icomoon.woff?rb5lt9") format("woff"), url("../fonts/icomoon.svg?rb5lt9#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+.overview_section .container .contents {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px;
 }
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.overview_section .container .contents .heading {
+  padding-top: 56px;
 }
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?g6tot6");
-  src: url("../fonts/icomoon.eot?g6tot6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?g6tot6") format("truetype"), url("../fonts/icomoon.woff?g6tot6") format("woff"), url("../fonts/icomoon.svg?g6tot6#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+.overview_section .container .contents .heading h3 {
+  border-bottom: 1px solid #fff;
 }
-[class^=icon-] [class^=icon-], [class^=icon-] [class*=" icon-"], [class*=" icon-"] [class^=icon-], [class*=" icon-"] [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.overview_section .container .contents .heading h3 span {
+  background: #D9D9D9;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 50px 50px 0 0;
 }
-[class^=icon-] .icon-badminton:before, [class*=" icon-"] .icon-badminton:before {
-  content: "\e900";
+.overview_section .container .contents .heading h3 p {
+  display: inline-block;
+  color: #9B802E;
+  margin-left: 24px;
 }
-[class^=icon-] .icon-swimming:before, [class*=" icon-"] .icon-swimming:before {
-  content: "\e901";
+.overview_section .container .contents .heading h2 {
+  color: #D9D9D9;
+  padding: 16px 0;
 }
-[class^=icon-] .icon-gym:before, [class*=" icon-"] .icon-gym:before {
-  content: "\e902";
+.overview_section .container .contents .image img {
+  width: 100%;
 }
-[class^=icon-] .icon-call:before, [class*=" icon-"] .icon-call:before {
-  content: "\e903";
+.overview_section .container .contents .content p {
+  color: #fff;
 }
 
-.icon-user:before {
-  content: "\e904";
-}
-
-.icon-badminton:before {
-  content: "\e900";
-}
-
-.icon-swimming:before {
-  content: "\e901";
-}
-
-.icon-gym:before {
-  content: "\e902";
-}
-
-.icon-call:before {
-  content: "\e903";
+@media (min-width: 768px) {
+  .overview_section {
+    background-image: url(../images/overview/ov1.webp);
+    width: 100vw;
+    height: 100vh;
+  }
+  .overview_section .container .contents {
+    width: 652px;
+    margin-top: 80px;
+    position: absolute;
+    left: 160px;
+    padding: 16px 232px 153px 56px;
+  }
+  .overview_section .container .contents .image {
+    left: 460px;
+    position: absolute;
+    top: 150px;
+    width: 480px;
+  }
 }/*# sourceMappingURL=style.css.map */
