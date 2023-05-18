@@ -1,0 +1,74 @@
+.cta-section {
+  background-image: url(../images/cta/mob-cta.webp);
+  height: 62vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    .contents {
+      position: relative;
+
+      img{
+        // width: 62vh;
+      }
+      .details {
+        color: #fff;
+        top: 90px;
+        position: absolute;
+        font-size: 24px;
+        padding: 18px;
+
+        h3 {
+          font-size: 28px;
+          font-weight: bolder;
+        }
+
+        button {
+          position: relative;
+          padding: 8px;
+          font-size: 16px;
+          background: transparent;
+          color: #fff;
+          border: 1px solid;
+          float: right;
+          top: -29px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .cta-section {
+    background: url(../images/cta/cta.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    .container {
+      .contents {
+        img {
+            width: 586px;
+            height: 552px;
+        }
+
+        .details {
+          display: flex;
+          margin-left: 170px;
+          top: 153px;
+          justify-content: center;
+          align-items: center;
+          font-size: 32px;
+
+          button {
+            width: 200px;
+            height: 64px;
+            left: 124px;
+            top: 41px;
+          }
+        }
+
+        
+      }
+    }
+  }
+}
