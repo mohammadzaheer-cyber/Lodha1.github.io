@@ -1,0 +1,131 @@
+.amenities-section {
+  .container {
+    position: relative;
+
+    .contents {
+      position: absolute;
+      top: 32px;
+      padding: 14px;
+
+      .heading {
+        padding-top: 16px;
+
+        h3 {
+          border-bottom: 1px solid $secondary-color;
+
+          span {
+            background: #d9d9d9;
+            width: 80px;
+            display: inline-block;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 50px 50px 0 0;
+          }
+
+          p {
+            display: inline-block;
+            color: $primary-Color;
+            margin-left: 24px;
+            text-transform: uppercase;
+          }
+        }
+
+        h2 {
+          padding: 16px 0;
+        }
+      }
+    }
+
+    .image {
+      .show1 {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .amenitie {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      top: 174px;
+      .amenities {
+        position: relative;
+        display: flex;
+
+        .box {
+          // height: 100px;
+          width: calc(calc(100% / 2) - 20px);
+          // border: 1px solid;
+          margin: 10px 10px 10px 10px;
+          text-align: center;
+          // background: #000;
+          color: $primary-Color;
+          border-radius: 25px;
+          padding: 7px 34px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            font-size: 75px;
+            padding: 5px;
+          }
+
+          hr {
+            width: 50%;
+            margin: 10px;
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        right: -135px;
+        top: 24px;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        border-bottom: 1px solid;
+        color: $primary-Color;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .amenities-section {
+    .container {
+      .image {
+        .hide {
+          display: none;
+        }
+
+        .show1{
+          display: block;
+        }
+
+        img {
+          height: 100vh;
+        }
+      }
+      .contents {
+      }
+
+      .amenitie {
+        flex-direction: row;
+        left: -106px;
+
+        button {
+          top: 260px;
+          right: -50px;
+        }
+      }
+    }
+  }
+}

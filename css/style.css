@@ -362,6 +362,7 @@ body {
   display: inline-block;
   color: #9B802E;
   margin-left: 24px;
+  text-transform: uppercase;
 }
 .overview_section .container .contents .heading h2 {
   color: #D9D9D9;
@@ -418,6 +419,7 @@ body {
   display: inline-block;
   color: #9B802E;
   margin-left: 24px;
+  text-transform: uppercase;
 }
 .highlights_section .container .contents .heading h2 {
   padding: 16px 0;
@@ -528,7 +530,7 @@ body {
 }
 .cta-section .container .contents img {
   width: 100%;
-  margin-bottom: -8px;
+  margin-bottom: -9px;
 }
 .cta-section .container .contents .details {
   color: #fff;
@@ -555,7 +557,6 @@ body {
 @media (min-width: 769px) {
   .cta-section {
     background: url(../images/cta/cta.webp);
-    height: 100vh;
     background-repeat: no-repeat;
   }
   .cta-section .container .contents img {
@@ -575,5 +576,105 @@ body {
     height: 64px;
     left: 124px;
     top: 41px;
+  }
+}
+.amenities-section .container {
+  position: relative;
+}
+.amenities-section .container .contents {
+  position: absolute;
+  top: 32px;
+  padding: 14px;
+}
+.amenities-section .container .contents .heading {
+  padding-top: 16px;
+}
+.amenities-section .container .contents .heading h3 {
+  border-bottom: 1px solid #D9D9D9;
+}
+.amenities-section .container .contents .heading h3 span {
+  background: #d9d9d9;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 50px 50px 0 0;
+}
+.amenities-section .container .contents .heading h3 p {
+  display: inline-block;
+  color: #9B802E;
+  margin-left: 24px;
+  text-transform: uppercase;
+}
+.amenities-section .container .contents .heading h2 {
+  padding: 16px 0;
+}
+.amenities-section .container .image .show1 {
+  display: none;
+}
+.amenities-section .container .image img {
+  width: 100%;
+}
+.amenities-section .container .amenitie {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 174px;
+}
+.amenities-section .container .amenitie .amenities {
+  position: relative;
+  display: flex;
+}
+.amenities-section .container .amenitie .amenities .box {
+  width: calc(50% - 20px);
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  color: #9B802E;
+  border-radius: 25px;
+  padding: 7px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amenities-section .container .amenitie .amenities .box span {
+  font-size: 75px;
+  padding: 5px;
+}
+.amenities-section .container .amenitie .amenities .box hr {
+  width: 50%;
+  margin: 10px;
+}
+.amenities-section .container .amenitie button {
+  position: relative;
+  right: -135px;
+  top: 24px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  color: #9B802E;
+}
+
+@media (min-width: 769px) {
+  .amenities-section .container .image .hide {
+    display: none;
+  }
+  .amenities-section .container .image .show1 {
+    display: block;
+  }
+  .amenities-section .container .image img {
+    height: 100vh;
+  }
+  .amenities-section .container .amenitie {
+    flex-direction: row;
+    left: -106px;
+  }
+  .amenities-section .container .amenitie button {
+    top: 260px;
+    right: -50px;
   }
 }/*# sourceMappingURL=style.css.map */
