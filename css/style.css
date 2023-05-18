@@ -520,12 +520,15 @@ body {
 }
 .cta-section {
   background-image: url(../images/cta/mob-cta.webp);
-  height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .cta-section .container .contents {
   position: relative;
+}
+.cta-section .container .contents img {
+  width: 100%;
+  margin-bottom: -8px;
 }
 .cta-section .container .contents .details {
   color: #fff;

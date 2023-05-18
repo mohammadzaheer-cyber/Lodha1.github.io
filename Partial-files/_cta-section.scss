@@ -1,6 +1,6 @@
 .cta-section {
   background-image: url(../images/cta/mob-cta.webp);
-  height: 62vh;
+  //   height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -8,8 +8,10 @@
     .contents {
       position: relative;
 
-      img{
+      img {
         // width: 62vh;
+        width: 100%;
+        margin-bottom: -8px;
       }
       .details {
         color: #fff;
@@ -47,8 +49,8 @@
     .container {
       .contents {
         img {
-            width: 586px;
-            height: 552px;
+          width: 586px;
+          height: 552px;
         }
 
         .details {
@@ -66,8 +68,6 @@
             top: 41px;
           }
         }
-
-        
       }
     }
   }
