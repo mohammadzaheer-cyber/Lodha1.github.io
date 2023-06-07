@@ -11,10 +11,10 @@
 
           span {
             background: #d9d9d9;
-            width: 80px;
+            width: 76px;
             display: inline-block;
             text-align: center;
-            font-size: 24px;
+            font-size: 32px;
             border-radius: 50px 50px 0 0;
           }
 
@@ -34,6 +34,7 @@
       .image {
         position: relative;
         z-index: 1;
+
         img {
           width: 100%;
         }
@@ -44,11 +45,12 @@
         bottom: 109px;
         z-index: 4;
 
-        .hide {
-          display: none;
-        }
+        // .hide {
+        //   display: none;
+        // }
 
         .d-flex {
+          opacity: 0;
           display: flex;
           //   background-color: aqua;
           align-items: center;
@@ -69,9 +71,13 @@
         }
 
         ul {
+
           li {
-            padding: 10px;
-            margin-top: 8px;
+            background-color: #000;
+            color: #fff;
+            padding: 0;
+            margin: 24px 0;
+            border-radius: 25px;
           }
         }
 
@@ -98,11 +104,21 @@
   .highlights_section {
     display: flex;
     justify-content: center;
+
     .container {
       .contents {
         padding: 32px 128px;
+
         .heading {
-          width: 200px;
+
+          // width: 200px;
+          h3 {
+            display: inline-block;
+
+            p {
+              // margin-left: auto;
+            }
+          }
         }
 
         .self {
@@ -123,9 +139,9 @@
         .main-contents {
           bottom: 0;
           left: -32px;
-          .hide {
-            display: contents;
-          }
+          // .hide {
+          //   display: contents;
+          // }
 
           ul {
             li {

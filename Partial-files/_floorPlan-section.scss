@@ -1,0 +1,105 @@
+.floorPlan-section {
+
+    background-image: url('../images/floor-plan/floor-bg.webp');
+
+    .container {
+
+
+        background-image: url(../images/floor-plan/mob-side.svg);
+        background-repeat: no-repeat;
+
+        .contents {
+            padding: 16px;
+
+            .heading {
+                padding-top: 72px;
+
+
+                h3 {
+
+                    border-bottom: 1px solid #D9D9D9;
+                    display: inline-block;
+
+                    span {
+                        background: #D9D9D9;
+                        width: 76px;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 32px;
+                        border-radius: 50px 50px 0 0;
+                    }
+
+                    p {
+                        display: inline-block;
+                        color: $primary-Color;
+                        margin-left: 24px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                h2 {
+                    color: #333333;
+                    padding: 16px 0;
+                }
+            }
+
+            .main-floor {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        border: 5px solid #9B802E;
+                        margin-top: 16px;
+                        border-radius: 25px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        button {
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                            background-color: #9B802E;
+                            outline: none;
+                            border: none;
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                            line-height: 64px;
+                            text-transform: uppercase;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:769px) {
+
+    .floorPlan-section {
+
+        .container {
+
+            .contents {
+
+                padding: 0 110px 64px;
+
+                .main-floor {
+
+                    ul {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

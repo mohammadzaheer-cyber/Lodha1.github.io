@@ -3,22 +3,23 @@
     position: relative;
 
     .contents {
-      position: absolute;
-      top: 32px;
-      padding: 14px;
+      // position: absolute;
+      // top: 32px;
+      padding: 60px 32px;
 
       .heading {
         padding-top: 16px;
 
         h3 {
           border-bottom: 1px solid $secondary-color;
+          display: inline-block;
 
           span {
             background: #d9d9d9;
-            width: 80px;
+            width: 76px;
             display: inline-block;
             text-align: center;
-            font-size: 24px;
+            font-size: 32px;
             border-radius: 50px 50px 0 0;
           }
 
@@ -40,92 +41,175 @@
       .show1 {
         display: none;
       }
+
       img {
+        position: absolute;
         width: 100%;
       }
     }
 
-    .amenitie {
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      width: 100%;
-      top: 174px;
-      .amenities {
-        position: relative;
-        display: flex;
+    .amenities {
 
-        .box {
-          // height: 100px;
-          width: calc(calc(100% / 2) - 20px);
-          // border: 1px solid;
-          margin: 10px 10px 10px 10px;
-          text-align: center;
-          // background: #000;
-          color: $primary-Color;
-          border-radius: 25px;
-          padding: 7px 34px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+      padding: 0 30px;
 
-          span {
-            font-size: 75px;
-            padding: 5px;
-          }
-
-          hr {
-            width: 50%;
-            margin: 10px;
-          }
-        }
+      .main-amenities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+        grid-auto-rows: 150px;
+        justify-content: space-around;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+        grid-gap: 32px 0;
       }
 
-      button {
-        position: relative;
-        right: -135px;
-        top: 24px;
-        background: transparent;
-        border: none;
-        font-size: 18px;
-        border-bottom: 1px solid;
+      li {
+        margin: 8px;
         color: $primary-Color;
+        opacity: 0;
+
+        span {
+          font-size: 75px;
+          padding: 5px;
+        }
+
+        hr {
+
+          margin: 10px;
+        }
       }
     }
   }
+
+  // .amenitie {
+  //   padding: 14px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   // position: absolute;
+  //   // width: 100%;
+  //   top: 174px;
+
+  //   // .amenities {
+  //   //   position: relative;
+  //   //   display: flex;
+
+  //   //   .box {
+  //   //     // height: 100px;
+  //   //     width: calc(calc(100% / 2) - 20px);
+  //   //     // border: 1px solid;
+  //   //     margin: 10px 10px 10px 10px;
+  //   //     text-align: center;
+  //   //     // background: #000;
+  //   //     color: $primary-Color;
+  //   //     border-radius: 25px;
+  //   //     padding: 7px 34px;
+  //   //     display: flex;
+  //   //     flex-direction: column;
+  //   //     align-items: center;
+
+  //   //     span {
+  //   //       font-size: 75px;
+  //   //       padding: 5px;
+  //   //     }
+
+  //   //     hr {
+  //   //       width: 50px;
+  //   //       margin: 10px;
+  //   //     }
+  //   //   }
+  //   // }
+
+  //   .more-amenities {
+  //     display: none;
+  //   }
+
+  //   button {
+  //     position: relative;
+  //     right: -100px;
+  //     // top: 24px;
+  //     background: transparent;
+  //     border: none;
+  //     font-size: 18px;
+  //     border-bottom: 1px solid;
+  //     color: $primary-Color;
+  //   }
+  // }
 }
+
+
+
+
 
 @media (min-width: 769px) {
   .amenities-section {
+
+    // height: 100vh;
+
     .container {
+
+      background-image: url(../images/amenities/amenitie-side1.webp);
+      background-repeat: no-repeat;
+      // height: 100vh;
+      background-position-x: right;
+      padding-bottom: 64px;
+
       .image {
         .hide {
           display: none;
         }
 
-        .show1{
+        .show1 {
           display: block;
         }
 
         img {
           height: 100vh;
+          float: right;
+          position: relative;
+          width: auto;
         }
       }
+
       .contents {
-      }
 
-      .amenitie {
-        flex-direction: row;
-        left: -106px;
-
-        button {
-          top: 260px;
-          right: -50px;
+        .heading {
+          padding: 0 120px;
         }
       }
+
+      // .amenitie {
+      //   flex-direction: row;
+      //   left: -75px;
+
+      //   .amenities {
+      //     flex-direction: column;
+      //   }
+
+      //   .more-amenities {
+      //     display: block;
+      //   }
+
+      //   button {
+      //     top: 260px;
+      //     right: -50px;
+      //   }
+      // }
+
+      .amenities {
+
+        padding: 0px 160px;
+
+        .main-amenities {
+
+          display: grid;
+          grid-template-columns: auto auto auto auto auto auto;
+          grid-auto-rows: 150px;
+          list-style: none;
+        }
+      }
+
     }
   }
 }

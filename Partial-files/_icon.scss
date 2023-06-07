@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?xe30ho');
-  src:  url('../fonts/icomoon.eot?xe30ho#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?xe30ho') format('truetype'),
-    url('../fonts/icomoon.woff?xe30ho') format('woff'),
-    url('../fonts/icomoon.svg?xe30ho#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?jpwvqn');
+  src:  url('../fonts/icomoon.eot?jpwvqn#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jpwvqn') format('truetype'),
+    url('../fonts/icomoon.woff?jpwvqn') format('woff'),
+    url('../fonts/icomoon.svg?jpwvqn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hamburger:before {
+  content: "\e90f";
+}
+.icon-house-plan:before {
+  content: "\e900";
+}
+.icon-multistorey:before {
+  content: "\e909";
+}
+.icon-area-with-pins:before {
+  content: "\e90c";
+}
+.icon-building:before {
+  content: "\e90d";
+}
 .icon-pitch:before {
   content: "\e90a";
 }
@@ -61,4 +76,19 @@
 }
 .icon-call:before {
   content: "\e903";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-aid-kit:before {
+  content: "\e998";
+}
+.icon-airplane:before {
+  content: "\e9af";
 }

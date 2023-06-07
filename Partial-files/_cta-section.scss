@@ -9,16 +9,16 @@
       position: relative;
 
       img {
-        // width: 62vh;
-        width: 100%;
-        margin-bottom: -9px;
+        // width: 100%;
+        position: absolute;
+        height: 100%;
       }
+
       .details {
         color: #fff;
-        top: 90px;
-        position: absolute;
         font-size: 24px;
-        padding: 18px;
+        padding: 24px 30px;
+        position: relative;
 
         h3 {
           font-size: 28px;
@@ -32,13 +32,14 @@
           background: transparent;
           color: #fff;
           border: 1px solid;
-          float: right;
-          top: -29px;
+          // top: 95px;
+          left: 168px;
         }
       }
     }
   }
 }
+
 
 @media (min-width: 769px) {
   .cta-section {
@@ -48,25 +49,25 @@
 
     .container {
       .contents {
-        img {
-          width: 586px;
-          height: 552px;
-        }
+        // img {
+        //   width: 586px;
+        //   height: 552px;
+        // }
 
         .details {
           display: flex;
-          margin-left: 170px;
-          top: 153px;
+          margin-right: 242px;
           justify-content: center;
           align-items: center;
           font-size: 32px;
+          padding: 150px 0;
+        }
 
-          button {
-            width: 200px;
-            height: 64px;
-            left: 124px;
-            top: 41px;
-          }
+        button {
+          width: 200px;
+          height: 64px;
+          left: 124px !important;
+          top: 95px !important;
         }
       }
     }

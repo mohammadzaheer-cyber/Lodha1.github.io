@@ -1,0 +1,185 @@
+.location-section {
+
+    background-image: url('../images/location/mobLocation.webp');
+
+    .container {
+
+        .contents {
+
+            padding: 8px;
+
+            .heading {
+                padding-top: 16px;
+                margin-left: 8px;
+
+                h3 {
+                    border-bottom: 1px solid $secondary-color;
+                    display: inline-block;
+
+                    span {
+                        background: #d9d9d9;
+                        width: 76px;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 32px;
+                        border-radius: 50px 50px 0 0;
+                    }
+
+                    p {
+                        display: inline-block;
+                        color: $primary-Color;
+                        margin-left: 24px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                h2 {
+                    padding: 16px 0;
+                    color: #d9d9d9;
+                }
+            }
+
+            .location-contents {
+
+                .loc-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .loc-content {
+
+                    margin-top: 16px;
+
+                    .loc-details {
+                        width: 100%;
+                        border: 2px solid #9B802E;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        padding: 24px;
+                        border-radius: 20px 20px 0 0;
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #FFF;
+                        }
+
+                        button {
+                            padding: 17px;
+                            font-size: 15px;
+                            color: #FFF;
+                            text-transform: capitalize;
+                            margin-top: 32px;
+                            letter-spacing: 1px;
+                            border: 2px solid #fff;
+                            background-color: #9B802E;
+                            width: 50%;
+                        }
+                    }
+
+                    .loc-spec {
+
+                        border: 2px solid #9B802E;
+                        position: relative;
+                        margin-top: 80px;
+                        border-radius: 0 0 20px 20px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        padding-bottom: 32px;
+
+                        .heading {
+                            position: absolute;
+                            list-style-type: none;
+                            padding-top: 0;
+                            margin-left: 0;
+                            display: flex;
+
+                            li {
+                                background-color: #fff;
+                                font-size: 32px;
+                                border-radius: 50%;
+                                padding: 24px;
+                                text-align: center;
+                                margin-top: -42px;
+                                margin-left: 24px;
+                            }
+                        }
+
+                        .specs {
+                            list-style-type: none;
+                            color: #fff;
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 64px;
+
+                            li {
+                                margin: 8px;
+                                border: 1px solid #fff;
+                                text-align: center;
+                                border-radius: 20px;
+                                padding: 24px 18px;
+                                width: calc(50% - 16px);
+
+
+                                span {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .location-section {
+        background-image: url('../images/location/location.webp');
+
+        .container {
+
+            .contents {
+
+                .heading {
+                    margin-left: 132px;
+                }
+
+                .location-contents {
+
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 32px;
+
+                    .loc-img {
+
+                        width: 440px;
+                    }
+
+                    .loc-content {
+                        max-width: 500px;
+
+
+                        .loc-spec {
+
+                            .specs {
+
+                                li {
+                                    width: calc(calc(100% / 4) - 16px);
+                                    padding: 16px 0;
+
+                                    span {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
