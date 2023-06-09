@@ -14,6 +14,8 @@
 
 
 <body>
+
+
   <section class="banner_section">
     <div class="container">
       <header>
@@ -181,7 +183,7 @@
             <h3>OFFICE / HOME / VIDEO</h3>
             <p>PRESENTATION BY, Lodha Amara, Mumbai</p>
           </div>
-          <button>ENQUIRE NOW</button>
+          <button data-open-modal="video_call" >ENQUIRE NOW</button>
         </div>
       </div>
     </div>
@@ -370,7 +372,7 @@
 
         <div class="main-floor">
           <ul>
-            <li>
+            <li class="swip1">
               <img src="./images/floor-plan/f1.png" alt="">
               <button>More Details</button>
             </li>
@@ -378,7 +380,7 @@
               <img src="./images/floor-plan/f1.png" alt="">
               <button>More Details</button>
             </li>
-            <li>
+            <li class="swip2">
               <img src="./images/floor-plan/f1.png" alt="">
               <button>More Details</button>
             </li>
@@ -440,14 +442,50 @@
             </div>
             <div class="loc-spec">
               <ul class="heading">
-                <li class="icon-location"></li>
-                <li class="icon-aid-kit"></li>
-                <li class="icon-airplane"></li>
+                <li class="icon-location head1 loc-head"></li>
+                <li class="icon-aid-kit head2"></li>
+                <li class="icon-airplane head3"></li>
               </ul>
 
               <ul class="specs">
                 <li>
                   <span>Kanjurmarg </span>
+                  <p> 300 mtr.</p>
+                </li>
+                <li>
+                  <span>Bhandup</span>
+                  <p>800 mtr</p>
+                </li>
+                <li>
+                  <span>Kanjurmarg</span>
+                  <p>300 mtr. </p>
+                </li>
+                <li>
+                  <span>Bhandup</span>
+                  <p>800 mtr</p>
+                </li>
+              </ul>
+              <ul class="specs1 hide1">
+                <li>
+                  <span>Kanjurmarg </span>
+                  <p> 500 mtr.</p>
+                </li>
+                <li>
+                  <span>Bhandup</span>
+                  <p>800 mtr</p>
+                </li>
+                <li>
+                  <span>Kanjurmarg</span>
+                  <p>300 mtr. </p>
+                </li>
+                <li>
+                  <span>Bhandup</span>
+                  <p>800 mtr</p>
+                </li>
+              </ul>
+              <ul class="specs2 hide1">
+                <li>
+                  <span>Test</span>
                   <p> 300 mtr.</p>
                 </li>
                 <li>
@@ -496,9 +534,91 @@
     </div>
   </section>
 
+  <footer>
+    <div class="container">
+      <div class="content">
+        <div class="head">
+          <a href="">Privacy Policy</a>
+          <span>|</span>
+          <a href="">Terms & Conditions</a>
+        </div>
+        <p>&copy; Homesfy – Craft Financial Advisors Pvt. Ltd. All Rights Reserved</p>
+        <hr>
+
+        <div class="details">
+          <p><b>Disclaimer:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quos iste quisquam iure
+            consequatur doloremque similique harum veritatis totam? Quo assumenda alias magni quod accusamus, debitis
+            porro aliquid velit ut cum, ducimus pariatur, officiis hic corrupti ipsa voluptatem expedita ex.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div class="modal" id="cta-modal">
+    <div class="container">
+      <div class="modal-form">
+        <div class="heading">
+          <h4>Lorem ipsum dolor sit amet. </h4>
+          <span>X</span>
+        </div>
+        <hr>
+
+        <div class="form">
+          <p>Request For More Details</p>
+
+          <form id="ModalForm">
+             <span class="icon-user"></span> 
+            <div class="name_area">
+              <p class="icon-user"></p>
+              <input type="text" class="name" placeholder=" Your name" />
+            </div>
+            <div class="number">
+              <input type="text" class="count_code" />
+              <input type="tel" class="num" placeholder=" Mobile Number" />
+            </div>
+            <button>Get Details</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- The CTA Modal start -->
+  <div id="cta-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" data-close-modal="close-modal">&times;</span>
+        <div class="modal-content-form">
+            <form id="ModalForm" class="form-border-bottom">
+                <h4 class="font-xl text-white mb-2" id="form-title">Rustomjee Crown Prabhadevi</h4>
+                <input type="text" class="form-input mfieldhide" id="ModalForm_Name" placeholder="Name"
+                    pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;"
+                    onkeypress="return OnlyAlphaValidationWithSpace(event)" required> <br> <br>
+                <div class="form-phone-group mfieldhide">
+                    <select data-dropdown-options id="ModalForm_CountryCode" class="form-input">
+                    </select>
+                    <input type="text" id="ModalForm_Number" class="form-input text-gray mfieldhide"
+                        placeholder="Mobile Number" pattern="[0-9]{10}$" onpaste="return false;"
+                        oncopy="return false;" onkeypress="return OnlyNumberValidationDash(event)" maxlength="10"
+                        required>
+                </div>
+                <button class="btn-sharp-white font-lg mt-2 text-black" id="mbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- The CTA Modal end -->
+
 
   <script src="./js/my_js.js"></script>
   <script src="./js/scroll.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/app.js"></script>
+
 </body>
 
 </html>

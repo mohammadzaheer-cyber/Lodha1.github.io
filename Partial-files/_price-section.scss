@@ -7,11 +7,13 @@
     .side-img {
         margin-top: -327px;
         width: 100%;
+        top: 5px;
+        position: relative;
     }
 
     .container {
         padding: 16px;
-
+        padding-top: 40px;
         .contents {
 
             // padding: 8px;
@@ -52,7 +54,8 @@
 
                 // display: flex;
                 // justify-content: center;
-
+                position: relative;
+                z-index: 98;
 
                 .card-body {
 
@@ -144,6 +147,28 @@
                         }
                     }
 
+                    // &:hover{
+
+                    //     .square{
+                    //        .box{
+                    //         background-color: transparent;
+                    //         color: #fff;
+                    //        }
+                    //     }
+
+                    //    .button{
+                    //         background-color: $primary-Color;
+                    //         button{
+                    //             background-color: $primary-Color;
+                    //         }
+                    //     }
+
+                    //     .circle{
+                    //         background-color: $primary-Color;
+                    //         color: #fff;
+                    //     }
+                    // }
+
                 }
 
 
@@ -176,6 +201,32 @@
                 .cards {
                     display: flex;
                     justify-content: space-around;
+
+                    .card-body{
+
+                        opacity: 0;
+                        &:hover{
+
+                            .square{
+                               .box{
+                                background-color: transparent;
+                                color: #fff;
+                               }
+                            }
+
+                           .button{
+                                background-color: $primary-Color;
+                                button{
+                                    background-color: $primary-Color;
+                                }
+                            }
+
+                            .circle{
+                                background-color: $primary-Color;
+                                color: #fff;
+                            }
+                        }
+                    }
                 }
 
             }
@@ -186,6 +237,7 @@
         .side-img {
             margin-bottom: -4px;
             width: auto;
+            top: 0;
         }
     }
 }

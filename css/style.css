@@ -243,6 +243,7 @@ body {
   background-color: #000000;
   width: 100%;
   text-align: center;
+  padding-bottom: 40px;
 }
 .banner_section .container .banner-content .banner-form .heading {
   color: #9B802E;
@@ -306,7 +307,7 @@ body {
   font-size: 24px;
   border: 1px solid;
   text-align: center;
-  padding: 12px 0 0 0;
+  padding: 8px 0 0 0;
   margin-top: 24px;
 }
 .banner_section .container .banner-content .banner-form .form .name_area .name {
@@ -390,7 +391,7 @@ body {
   .banner_section .container header .side .slid-nav .main-contain .menu-container li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 13px;
     border-radius: 5px;
   }
   .banner_section .container header .side .slid-nav .main-contain .menu-container li a:hover {
@@ -451,6 +452,7 @@ body {
 .overview_section .container .contents {
   background: rgba(0, 0, 0, 0.8);
   padding: 8px;
+  padding-top: 40px;
 }
 .overview_section .container .contents .heading {
   padding-top: 16px;
@@ -513,6 +515,7 @@ body {
 }
 .highlights_section .container .contents {
   padding: 8px;
+  padding-top: 40px;
 }
 .highlights_section .container .contents .heading {
   padding-top: 16px;
@@ -592,6 +595,10 @@ body {
   .highlights_section {
     display: flex;
     justify-content: center;
+  }
+  .highlights_section .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .highlights_section .container .contents {
     padding: 32px 128px;
@@ -685,6 +692,7 @@ body {
 }
 .amenities-section .container {
   position: relative;
+  padding-bottom: 40px;
 }
 .amenities-section .container .contents {
   padding: 60px 32px;
@@ -784,9 +792,12 @@ body {
 .price-section .side-img {
   margin-top: -327px;
   width: 100%;
+  top: 5px;
+  position: relative;
 }
 .price-section .container {
   padding: 16px;
+  padding-top: 40px;
 }
 .price-section .container .contents {
   position: relative;
@@ -814,6 +825,10 @@ body {
 .price-section .container .contents .heading h2 {
   color: #D9D9D9;
   padding: 16px 0;
+}
+.price-section .container .contents .cards {
+  position: relative;
+  z-index: 98;
 }
 .price-section .container .contents .cards .card-body {
   display: flex;
@@ -902,9 +917,27 @@ body {
     display: flex;
     justify-content: space-around;
   }
+  .price-section .container .contents .cards .card-body {
+    opacity: 0;
+  }
+  .price-section .container .contents .cards .card-body:hover .square .box {
+    background-color: transparent;
+    color: #fff;
+  }
+  .price-section .container .contents .cards .card-body:hover .button {
+    background-color: #9B802E;
+  }
+  .price-section .container .contents .cards .card-body:hover .button button {
+    background-color: #9B802E;
+  }
+  .price-section .container .contents .cards .card-body:hover .circle {
+    background-color: #9B802E;
+    color: #fff;
+  }
   .price-section .side-img {
     margin-bottom: -4px;
     width: auto;
+    top: 0;
   }
 }
 .floorPlan-section {
@@ -913,6 +946,7 @@ body {
 .floorPlan-section .container {
   background-image: url(../images/floor-plan/mob-side.svg);
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 .floorPlan-section .container .contents {
   padding: 16px;
@@ -976,9 +1010,30 @@ body {
   .floorPlan-section .container .contents {
     padding: 0 110px 64px;
   }
+  .floorPlan-section .container .contents .main-floor {
+    margin-bottom: 350px;
+  }
   .floorPlan-section .container .contents .main-floor ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  .floorPlan-section .container .contents .main-floor ul li {
+    margin-top: 350px;
+    position: absolute;
+    opacity: 0;
+    align-items: flex-start;
+    border: none;
+  }
+  .floorPlan-section .container .contents .main-floor ul li button {
+    opacity: 0;
+  }
+  .floorPlan-section .container .contents .main-floor ul li:hover {
+    border: 5px solid #9B802E;
+    align-items: center;
+  }
+  .floorPlan-section .container .contents .main-floor ul li:hover button {
+    opacity: 1 !important;
+    transition: all 1s;
   }
 }
 .gallery-section {
@@ -1056,6 +1111,10 @@ body {
 }
 .location-section {
   background-image: url("../images/location/mobLocation.webp");
+}
+.location-section .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .location-section .container .contents {
   padding: 8px;
@@ -1140,6 +1199,7 @@ body {
   text-align: center;
   margin-top: -42px;
   margin-left: 24px;
+  border: 5px solid #fff;
 }
 .location-section .container .contents .location-contents .loc-content .loc-spec .specs {
   list-style-type: none;
@@ -1157,6 +1217,42 @@ body {
   width: calc(50% - 16px);
 }
 .location-section .container .contents .location-contents .loc-content .loc-spec .specs li span {
+  font-size: 24px;
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs1 {
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs1 li {
+  margin: 8px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 24px 18px;
+  width: calc(50% - 16px);
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs1 li span {
+  font-size: 24px;
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs2 {
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs2 li {
+  margin: 8px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 24px 18px;
+  width: calc(50% - 16px);
+}
+.location-section .container .contents .location-contents .loc-content .loc-spec .specs2 li span {
   font-size: 24px;
 }
 
@@ -1185,12 +1281,32 @@ body {
   .location-section .container .contents .location-contents .loc-content .loc-spec .specs li span {
     font-size: 18px;
   }
+  .location-section .container .contents .location-contents .loc-content .loc-spec .specs1 li {
+    width: calc(25% - 16px);
+    padding: 16px 0;
+  }
+  .location-section .container .contents .location-contents .loc-content .loc-spec .specs1 li span {
+    font-size: 18px;
+  }
+  .location-section .container .contents .location-contents .loc-content .loc-spec .specs2 li {
+    width: calc(25% - 16px);
+    padding: 16px 0;
+  }
+  .location-section .container .contents .location-contents .loc-content .loc-spec .specs2 li span {
+    font-size: 18px;
+  }
 }
+.hide1 {
+  display: none !important;
+}
+
 .about-section {
   background-color: #000;
 }
 .about-section .container {
   padding: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .about-section .container .contents .heading {
   padding-top: 16px;
@@ -1250,4 +1366,124 @@ body {
   .about-section .container .contents .content .image img {
     width: 100%;
   }
+}
+footer {
+  background-color: #EFEEEE;
+}
+footer .container {
+  padding: 8px;
+}
+footer .container .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer .container .content .head a {
+  text-align: center;
+}
+footer .container .content p {
+  font-size: 12px;
+  margin-top: 8px;
+}
+footer .container .content hr {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+.modal .container .modal-form {
+  width: 320px;
+  background-color: #000;
+  color: #9B802E;
+  padding: 8px;
+  position: relative;
+  border: 1px solid #fff;
+}
+.modal .container .modal-form .heading h4 {
+  font-size: 20px;
+}
+.modal .container .modal-form .heading span {
+  position: absolute;
+  background-color: #f00;
+  color: #fff;
+  font-size: 20px;
+  padding: 0px 8px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.modal .container .modal-form hr {
+  margin-top: 16px;
+  width: 100%;
+  color: #9B802E;
+}
+.modal .container .modal-form .form {
+  padding: 32px;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 32px;
+}
+.modal .container .modal-form .form p {
+  color: #fff;
+  line-height: 16px;
+}
+.modal .container .modal-form .form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 24px;
+  color: #fff;
+}
+.modal .container .modal-form .form span {
+  color: #fff;
+  width: 20%;
+}
+.modal .container .modal-form .form button {
+  width: 100%;
+  background: #9b802e;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.modal .container .modal-form .form .name_area {
+  display: flex;
+}
+.modal .container .modal-form .form .name_area p {
+  width: 25%;
+  font-size: 24px;
+  border: 1px solid;
+  text-align: center;
+  padding: 8px 0 0 0;
+  margin-top: 24px;
+}
+.modal .container .modal-form .form .name_area .name {
+  width: 75%;
+}
+.modal .container .modal-form .form .number {
+  display: flex;
+}
+.modal .container .modal-form .form .number .count_code {
+  width: 25%;
+}
+.modal .container .modal-form .form .number .num {
+  width: 75%;
 }/*# sourceMappingURL=style.css.map */

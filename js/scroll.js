@@ -42,14 +42,56 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 1960) {
 
         let i = 0
-        li_list.forEach(async function (li) {
+        li_list.forEach(function (li) {
             setTimeout(() => {
                 li.classList.add("ameni-show");
             }, i * 250)
             i++;
         })
-        
+
     }
+
+    // Price card
+
+    const card_body = document.querySelectorAll('.card-body');
+
+    if (window.scrollY >= 2600) {
+
+        let i = 0
+        card_body.forEach(function (cb) {
+            setTimeout(() => {
+                cb.classList.add("card-show");
+            }, i * 300)
+            i++;
+        })
+
+    }
+
+
+    // floor card
+
+    const floor_card = document.querySelectorAll('.main-floor li');
+
+    if(window.scrollY >= 3100){
+        let i = 0
+        floor_card.forEach(function (fc) {
+            setTimeout(() => {
+                fc.classList.add("show-card");
+            }, i * 1)
+            i++;
+        })
+    }
+
+    const swip1 = document.querySelector('.swip1');
+    const swip2 = document.querySelector('.swip2');
+
+    if (window.scrollY >= 3300) {
+        swip1.classList.add('card-swip1')
+        swip2.classList.add('card-swip2')
+    }
+
+
+    // console.log(swip1);
 
 })
 

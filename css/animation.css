@@ -24,7 +24,7 @@
 
 /* Right to left  */
 
-.right-left{
+.right-left {
   opacity: 1 !important;
   animation: 1s wipe-in-left;
 }
@@ -33,6 +33,7 @@
   from {
     clip-path: inset(0 0 0 100%);
   }
+
   to {
     clip-path: inset(0 0 0 0);
   }
@@ -44,7 +45,7 @@
 
 /* Amenities animation */
 
-.ameni-show{
+.ameni-show {
   opacity: 1 !important;
   animation: 1s square-in-center;
 }
@@ -54,6 +55,7 @@
   from {
     clip-path: inset(100% 100% 100% 100%);
   }
+
   to {
     clip-path: inset(0 0 0 0);
   }
@@ -61,4 +63,78 @@
 
 [transition-style="in:square:center"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+}
+
+
+/* Price Section  */
+
+.card-show {
+  opacity: 1 !important;
+  animation: 2s wipe-in-down;
+}
+
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:down"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+}
+
+
+/* Floor Plan  */
+
+@media (min-width: 769px){
+  .show-card{
+    opacity: 1 !important;
+    animation: 1s wipe-in-down;
+  }
+
+
+.card-swip1{
+  animation: 1s card-swip1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-swip1 {
+  from {
+    margin-right: 0px;
+  }
+
+  to{
+    margin-right: 644px;
+  }
+}
+
+.card-swip2{
+  animation: 1s card-swip2;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes card-swip2 {
+  from {
+    margin-left: 0px;
+  }
+
+  to{
+    margin-left: 644px;
+  }
+}
+}
+
+
+
+/* Location css */
+
+.loc-head{
+  background-color: #000 !important;
+  border: 5px solid #9B802E !important;
+  color: #fff;
 }

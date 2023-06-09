@@ -1,0 +1,120 @@
+.modal{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+
+    .container{
+
+        .modal-form{
+
+            width: 320px;
+            background-color: #000;
+            color: $primary-Color;
+            padding: 8px;
+            position: relative;
+            border: 1px solid #fff;
+            .heading{
+
+                // position: relative;
+
+                h4{
+                    font-size: 20px;
+                }
+
+                span{
+                    position: absolute;
+                    background-color: #f00;
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 0px 8px;
+                    top: 0;
+                    right: 0;
+                    cursor: pointer;
+                }
+            }
+
+            hr{
+                margin-top: 16px;
+                width: 100%;
+                color: $primary-Color;
+            }
+
+            .form {
+                padding: 32px;
+                text-align: left;
+                margin-top: 10px;
+                padding-bottom: 32px;
+                
+                p {
+                  color: #fff;
+                  line-height: 16px;
+                }
+      
+                input {
+                  width: 100%;
+                  outline: none;
+                  border: 1px solid #fff;
+                  background: transparent;
+                  font-size: 16px;
+                  padding: 8px;
+                  margin-top: 24px;
+                  color: #fff;
+                }
+      
+                span {
+                  color: #fff;
+                  width: 20%;
+                }
+      
+                button {
+                  width: 100%;
+                  background: #9b802e;
+                  border: 1px solid #fff;
+                  margin-top: 40px;
+                  font-size: 24px;
+                  color: #fff;
+                  padding: 8px;
+                  margin-bottom: 16px;
+                }
+      
+                .name_area {
+                  display: flex;
+      
+                  p {
+                    width: 25%;
+                    font-size: 24px;
+                    border: 1px solid;
+                    text-align: center;
+                    padding: 8px 0 0 0;
+                    margin-top: 24px;
+                  }
+      
+                  .name {
+                    width: 75%;
+                  }
+                }
+      
+                .number {
+                  display: flex;
+      
+                  .count_code {
+                    width: 25%;
+                  }
+      
+                  .num {
+                    width: 75%;
+                  }
+                }
+              }
+        }
+    }
+}

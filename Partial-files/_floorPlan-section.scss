@@ -7,6 +7,7 @@
 
         background-image: url(../images/floor-plan/mob-side.svg);
         background-repeat: no-repeat;
+        padding-bottom: 40px;
 
         .contents {
             padding: 16px;
@@ -94,9 +95,35 @@
 
                 .main-floor {
 
+                    margin-bottom: 350px;
+
                     ul {
                         flex-direction: row;
-                        justify-content: space-between;
+                        justify-content: center;
+                        
+                        li{
+                            margin-top: 350px;
+                            position: absolute;
+                            opacity: 0;
+                            align-items: flex-start;
+                            border: none;
+
+                            button{
+                                opacity: 0;
+                            }
+
+                            &:hover{
+
+                                border: 5px solid $primary-Color;
+                                align-items: center;
+                                button{
+                        
+                                    opacity: 1 !important;
+                                    transition: all 1s;
+                                }
+                            }
+
+                        }
                     }
                 }
             }

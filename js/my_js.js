@@ -46,3 +46,48 @@ gal_body.addEventListener("mouseup", () => {
 })
 
 // gallery scroll end 
+
+
+//Location specification
+
+const head1 = document.querySelector('.head1');
+const head2 = document.querySelector('.head2');
+const head3 = document.querySelector('.head3');
+
+const specs = document.querySelector('.specs');
+const specs1 = document.querySelector('.specs1');
+const specs2 = document.querySelector('.specs2');
+
+head2.addEventListener('click', () => {
+  specs1.classList.remove('hide1');
+  specs.classList.add('hide1');
+  specs2.classList.add('hide1');
+})
+
+head3.addEventListener('click', () => {
+specs2.classList.remove('hide1');
+specs.classList.add('hide1');
+specs1.classList.add('hide1');
+})
+
+head1.addEventListener('click', () => {
+specs.classList.remove('hide1');  
+specs2.classList.add('hide1');
+specs1.classList.add('hide1');
+})
+
+head1.addEventListener('click', () => {
+    head1.classList.add('loc-head');
+    head2.classList.remove('loc-head');
+    head3.classList.remove('loc-head');
+})
+head2.addEventListener('click', () => {
+    head2.classList.add('loc-head');
+    head1.classList.remove('loc-head');
+    head3.classList.remove('loc-head');
+})
+head3.addEventListener('click', () => {
+    head3.classList.add('loc-head');
+    head2.classList.remove('loc-head');
+    head1.classList.remove('loc-head');
+})
