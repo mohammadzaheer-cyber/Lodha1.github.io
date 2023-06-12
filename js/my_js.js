@@ -85,9 +85,31 @@ head2.addEventListener('click', () => {
     head2.classList.add('loc-head');
     head1.classList.remove('loc-head');
     head3.classList.remove('loc-head');
-})
+});
 head3.addEventListener('click', () => {
     head3.classList.add('loc-head');
     head2.classList.remove('loc-head');
     head1.classList.remove('loc-head');
+});
+
+// Modal Call
+
+const callModal = document.querySelectorAll('.call-modal');
+const modalform = document.querySelector('.modal');
+
+const closeModal = document.querySelector('.close-modal');
+
+for (const modalCall of callModal){
+
+   modalCall.addEventListener('click', () => {
+    modalform.classList.add('modal-show');
+   })
+}
+
+closeModal.addEventListener('click', () => {
+    modalform.classList.remove('modal-show');
+})
+
+modalform.addEventListener('click', () => {
+    modalform.classList.remove('modal-show');
 })

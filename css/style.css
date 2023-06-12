@@ -318,6 +318,14 @@ body {
 }
 .banner_section .container .banner-content .banner-form .form .number .count_code {
   width: 25%;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  margin-top: 24px;
+}
+.banner_section .container .banner-content .banner-form .form .number #dropEnquiry_CountryCode {
+  background-color: #000;
 }
 .banner_section .container .banner-content .banner-form .form .number .num {
   width: 75%;
@@ -1483,6 +1491,14 @@ footer .container .content hr {
 }
 .modal .container .modal-form .form .number .count_code {
   width: 25%;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  margin-top: 24px;
+}
+.modal .container .modal-form .form .number #dropEnquiry_CountryCode {
+  background-color: #000;
 }
 .modal .container .modal-form .form .number .num {
   width: 75%;

@@ -85,17 +85,20 @@
           <div class="form">
             <p>Request For More Details</p>
 
-            <form action="#">
+            <form id="dropEnquiry">
               <!-- <span class="icon-user"></span> -->
               <div class="name_area">
                 <p class="icon-user"></p>
-                <input type="text" class="name" placeholder=" Your name" />
+                <input type="text" class="name" id="dropEnquiry_Name" placeholder=" Your name" />
               </div>
               <div class="number">
-                <input type="text" class="count_code" />
-                <input type="tel" class="num" placeholder=" Mobile Number" />
+                <!-- <input type="text" class="count_code" /> -->
+                <select id="dropEnquiry_CountryCode" id="dropEnquiry_CountryCode" class="count_code"
+                  data-dropdown-options>
+                </select>
+                <input type="tel" class="num" id="dropEnquiry_Number" placeholder=" Mobile Number" />
               </div>
-              <button>Get Details</button>
+              <button>Get Details</button>             
             </form>
           </div>
         </div>
@@ -183,7 +186,7 @@
             <h3>OFFICE / HOME / VIDEO</h3>
             <p>PRESENTATION BY, Lodha Amara, Mumbai</p>
           </div>
-          <button data-open-modal="video_call" >ENQUIRE NOW</button>
+          <button class="call-modal">ENQUIRE NOW</button>
         </div>
       </div>
     </div>
@@ -309,7 +312,7 @@
               </div>
             </div>
             <div class="button">
-              <button>More Details</button>
+              <button class="call-modal">More Details</button>
             </div>
             <div class="circle">
               <h3>1 bhk</h3>
@@ -328,7 +331,7 @@
               </div>
             </div>
             <div class="button">
-              <button>More Details</button>
+              <button class="call-modal" >More Details</button>
             </div>
             <div class="circle">
               <h3>1 bhk</h3>
@@ -347,7 +350,7 @@
               </div>
             </div>
             <div class="button">
-              <button>More Details</button>
+              <button class="call-modal" >More Details</button>
             </div>
             <div class="circle">
               <h3>1 bhk</h3>
@@ -374,15 +377,15 @@
           <ul>
             <li class="swip1">
               <img src="./images/floor-plan/f1.png" alt="">
-              <button>More Details</button>
+              <button class="call-modal" >More Details</button>
             </li>
             <li>
               <img src="./images/floor-plan/f1.png" alt="">
-              <button>More Details</button>
+              <button class="call-modal" >More Details</button>
             </li>
             <li class="swip2">
               <img src="./images/floor-plan/f1.png" alt="">
-              <button>More Details</button>
+              <button class="call-modal" >More Details</button>
             </li>
           </ul>
         </div>
@@ -438,7 +441,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsum incidunt suscipit similique sint
                 veniam dignissimos, mollitia neque tenetur facilis distinctio vero eaque, corporis minima, error aut
                 corrupti temporibus modi pariatur! Nobis, omnis a. Facere accusamus illo corrupti ipsa quis.</p>
-              <button>book site visit</button>
+              <button class="call-modal" >book site visit</button>
             </div>
             <div class="loc-spec">
               <ul class="heading">
@@ -554,71 +557,49 @@
     </div>
   </footer>
 
-  <!-- <div class="modal" id="cta-modal">
+  <div class="modal">
     <div class="container">
       <div class="modal-form">
         <div class="heading">
           <h4>Lorem ipsum dolor sit amet. </h4>
-          <span>X</span>
+          <span class="close-modal">X</span>
         </div>
         <hr>
 
         <div class="form">
           <p>Request For More Details</p>
 
-          <form id="ModalForm">
-             <span class="icon-user"></span> 
+          <form>
+            <!-- <span class="icon-user"></span>  -->
             <div class="name_area">
               <p class="icon-user"></p>
               <input type="text" class="name" placeholder=" Your name" />
             </div>
             <div class="number">
-              <input type="text" class="count_code" />
+              <!-- <input type="text" class="count_code" /> -->
+              <select id="dropEnquiry_CountryCode" class="count_code" data-dropdown-options>
+              </select>
               <input type="tel" class="num" placeholder=" Mobile Number" />
             </div>
             <button>Get Details</button>
           </form>
         </div>
-        
+
       </div>
     </div>
-  </div> -->
+  </div>
 
 
-  <!-- The CTA Modal start -->
-  <div id="cta-modal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close" data-close-modal="close-modal">&times;</span>
-        <div class="modal-content-form">
-            <form id="ModalForm" class="form-border-bottom">
-                <h4 class="font-xl text-white mb-2" id="form-title">Rustomjee Crown Prabhadevi</h4>
-                <input type="text" class="form-input mfieldhide" id="ModalForm_Name" placeholder="Name"
-                    pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;"
-                    onkeypress="return OnlyAlphaValidationWithSpace(event)" required> <br> <br>
-                <div class="form-phone-group mfieldhide">
-                    <select data-dropdown-options id="ModalForm_CountryCode" class="form-input">
-                    </select>
-                    <input type="text" id="ModalForm_Number" class="form-input text-gray mfieldhide"
-                        placeholder="Mobile Number" pattern="[0-9]{10}$" onpaste="return false;"
-                        oncopy="return false;" onkeypress="return OnlyNumberValidationDash(event)" maxlength="10"
-                        required>
-                </div>
-                <button class="btn-sharp-white font-lg mt-2 text-black" id="mbutton">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- The CTA Modal end -->
 
 
-  <script src="./js/my_js.js"></script>
-  <script src="./js/scroll.js"></script>
+
   <script src="./js/custom.js"></script>
-  <script src="./js/api.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/app.js"></script>
-
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/my_js.js"></script>
+    <script src="./js/scroll.js"></script>
+    
 </body>
 
 </html>

@@ -138,3 +138,10 @@
   border: 5px solid #9B802E !important;
   color: #fff;
 }
+
+
+/* Modal show */
+
+.modal-show{
+  display: flex !important;
+}

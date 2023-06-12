@@ -228,6 +228,15 @@
 
             .count_code {
               width: 25%;
+              background-color: transparent;
+              color: #fff;
+              outline: none;
+              border: 1px solid #fff;
+              margin-top: 24px;
+            }
+
+            #dropEnquiry_CountryCode{
+              background-color: #000;
             }
 
             .num {
