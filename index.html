@@ -89,14 +89,15 @@
               <!-- <span class="icon-user"></span> -->
               <div class="name_area">
                 <p class="icon-user"></p>
-                <input type="text" class="name" id="dropEnquiry_Name" placeholder=" Your name" />
+                <input type="text" class="name" id="dropEnquiry_Name" placeholder=" Your name" pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyAlphaValidationWithSpace(event)" required/>
               </div>
               <div class="number">
                 <!-- <input type="text" class="count_code" /> -->
                 <select id="dropEnquiry_CountryCode" id="dropEnquiry_CountryCode" class="count_code"
                   data-dropdown-options>
                 </select>
-                <input type="tel" class="num" id="dropEnquiry_Number" placeholder=" Mobile Number" />
+                <input type="tel" class="num" id="dropEnquiry_Number" placeholder=" Mobile Number" pattern="[0-9]{10}$" onpaste="return false;" oncopy="return false;"
+                onkeypress="return OnlyNumberValidationDash(event)" maxlength="10" required/>
               </div>
               <button>Get Details</button>
             </form>
@@ -570,21 +571,19 @@
           <p>Request For More Details</p>
 
           <form id="ModalForm">
-            <!-- <span class="icon-user"></span>  -->
             <div class="name_area">
               <p class="icon-user"></p>
-              <input type="text" class="name" id="ModalForm_Name" placeholder=" Your name" />
+              <input type="text" class="name" id="ModalForm_Name" placeholder=" Your name" pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyAlphaValidationWithSpace(event)" required/>
             </div>
             <div class="number">
-              <!-- <input type="text" class="count_code" /> -->
               <select id="ModalForm_CountryCode" class="count_code" data-dropdown-options>
               </select>
-              <input type="tel" class="num" id="ModalForm_Number" placeholder=" Mobile Number" />
+              <input type="tel" class="num" id="ModalForm_Number" placeholder=" Mobile Number" pattern="[0-9]{10}$" onpaste="return false;" oncopy="return false;"
+              onkeypress="return OnlyNumberValidationDash(event)" maxlength="10" required/>
             </div>
             <button>Get Details</button>
           </form>
         </div>
-
       </div>
     </div>
   </div>
