@@ -110,6 +110,6 @@ closeModal.addEventListener('click', () => {
     modalform.classList.remove('modal-show');
 })
 
-modalform.addEventListener('click', () => {
-    modalform.classList.remove('modal-show');
-})
+// modalform.addEventListener('click', () => {
+//     modalform.classList.remove('modal-show');
+// })
