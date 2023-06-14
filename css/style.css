@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Hind", serif;
+  font-family: "Hind", sans-serif;
 }
 
 body {
@@ -176,7 +176,7 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
   display: none;
-  z-index: 1;
+  z-index: 999;
 }
 .banner_section .container .menu .menu-content {
   display: flex;
@@ -203,23 +203,22 @@ body {
   width: 100%;
 }
 .banner_section .container .banner-content .content {
-  padding: 80px 20px;
+  padding: 120px 20px 80px;
 }
 .banner_section .container .banner-content .content .content1 {
-  padding: 10px;
   color: #D9D9D9;
 }
 .banner_section .container .banner-content .content .content1 h4 {
   font-size: 28px;
   font-weight: 600;
   line-height: 44px;
-  font-family: "Hind", serif;
+  font-family: "Hind", sans-serif;
 }
 .banner_section .container .banner-content .content .content1 p {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
-  font-family: "Hind", serif;
+  font-family: "Hind", sans-serif;
 }
 .banner_section .container .banner-content .content ul {
   display: flex;
@@ -279,9 +278,9 @@ body {
   width: 100%;
   outline: none;
   border: 1px solid #fff;
-  background: transparent;
+  background: #000;
   font-size: 16px;
-  padding: 8px;
+  padding: 14px;
   margin-top: 24px;
   color: #fff;
 }
@@ -307,8 +306,9 @@ body {
   font-size: 24px;
   border: 1px solid;
   text-align: center;
-  padding: 8px 0 0 0;
+  padding: 14px 0 0 0;
   margin-top: 24px;
+  background-color: #000;
 }
 .banner_section .container .banner-content .banner-form .form .name_area .name {
   width: 75%;
@@ -387,7 +387,7 @@ body {
     transition: all 0.5s;
   }
   .banner_section .container header .side .slid-nav .main-contain .menu-container:hover {
-    margin-left: -14px;
+    margin-left: 0px;
   }
   .banner_section .container header .side .slid-nav .main-contain .menu-container li {
     width: 120px;
@@ -428,29 +428,39 @@ body {
   }
   .banner_section .container .banner-content .content {
     padding: 0;
-    width: 39%;
+    width: 40%;
     position: relative;
-    left: 185px;
-    top: 170px;
+    left: 194px;
+    top: 196px;
+  }
+  .banner_section .container .banner-content .content .content1 {
+    padding: 0;
   }
   .banner_section .container .banner-content .content .content1 h4 {
     font-size: 48px;
     line-height: 70px;
+    font-weight: 600;
   }
   .banner_section .container .banner-content .content .content1 p {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 38px;
   }
   .banner_section .container .banner-content .content ul {
     margin-top: 24px;
   }
   .banner_section .container .banner-content .banner-form {
-    width: 320px;
+    width: 360px;
     border: 1px solid #fff;
     position: relative;
     left: 340px;
     top: 160px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    padding-bottom: 0;
+  }
+  .banner_section .container .banner-content .banner-form .heading {
+    background-color: #000;
+    border-radius: 20px 20px 0 0;
   }
   .banner_section .container .banner-content .banner-form .form {
     padding: 24px 32px;
@@ -461,12 +471,14 @@ body {
   background: rgba(0, 0, 0, 0.8);
   padding: 8px;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 .overview_section .container .contents .heading {
   padding-top: 16px;
 }
 .overview_section .container .contents .heading h3 {
   border-bottom: 1px solid #fff;
+  display: inline-block;
 }
 .overview_section .container .contents .heading h3 span {
   background: #D9D9D9;
@@ -488,6 +500,9 @@ body {
 }
 .overview_section .container .contents .content p {
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
 }
 .overview_section .container .image img {
   width: 100%;
@@ -498,27 +513,27 @@ body {
     background-image: url(../images/overview/ov1.webp);
     width: 100vw;
     height: 100vh;
+    padding-bottom: 764px;
   }
   .overview_section .container {
     position: relative;
   }
   .overview_section .container .contents {
-    width: 652px;
-    margin-top: 80px;
+    width: 736px;
+    margin-top: 64px;
     position: absolute;
     left: 160px;
-    padding: 16px 232px 153px 56px;
+    padding: 16px 232px 80px 56px;
     display: none;
+  }
+  .overview_section .container .contents .heading {
+    margin-top: 50px;
   }
   .overview_section .container .image {
     left: 599px;
     position: absolute;
-    top: 265px;
-    width: 538px;
+    width: 570px;
     display: none;
-  }
-  .overview_section .container .image img {
-    height: 360px;
   }
 }
 .highlights_section .container .contents {
@@ -584,6 +599,10 @@ body {
   padding: 0;
   margin: 24px 0;
   border-radius: 25px;
+}
+.highlights_section .container .contents .main-contents ul li h5 {
+  position: relative;
+  left: 16px;
 }
 .highlights_section .container .contents .main-contents .float {
   position: absolute;
@@ -682,6 +701,7 @@ body {
   .cta-section {
     background: url(../images/cta/cta.webp);
     background-repeat: no-repeat;
+    background-position: center;
   }
   .cta-section .container .contents .details {
     display: flex;
@@ -691,11 +711,13 @@ body {
     font-size: 32px;
     padding: 150px 0;
   }
+  .cta-section .container .contents .details div {
+    line-height: 48px;
+  }
   .cta-section .container .contents button {
     width: 200px;
     height: 64px;
-    left: 124px !important;
-    top: 95px !important;
+    left: 70px !important;
   }
 }
 .amenities-section .container {
@@ -854,11 +876,11 @@ body {
   margin-top: -5px;
 }
 .price-section .container .contents .cards .card-body .square .box {
-  width: 45%;
+  width: 40%;
   border: 1px solid #999999;
   text-align: center;
   padding-top: 64px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: #fff;
 }
 .price-section .container .contents .cards .card-body .square .box span {
@@ -874,7 +896,7 @@ body {
   line-height: 38px;
 }
 .price-section .container .contents .cards .card-body .button {
-  width: 90%;
+  width: 80%;
   text-align: center;
   background: transparent;
   margin: 0 auto;
@@ -1030,7 +1052,7 @@ body {
     position: absolute;
     opacity: 0;
     align-items: flex-start;
-    border: none;
+    border: 5px solid #555555;
   }
   .floorPlan-section .container .contents .main-floor ul li button {
     opacity: 0;
@@ -1182,7 +1204,6 @@ body {
   letter-spacing: 1px;
   border: 2px solid #fff;
   background-color: #9B802E;
-  width: 50%;
 }
 .location-section .container .contents .location-contents .loc-content .loc-spec {
   border: 2px solid #9B802E;
@@ -1198,6 +1219,8 @@ body {
   padding-top: 0;
   margin-left: 0;
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 .location-section .container .contents .location-contents .loc-content .loc-spec .heading li {
   background-color: #fff;
@@ -1206,7 +1229,6 @@ body {
   padding: 24px;
   text-align: center;
   margin-top: -42px;
-  margin-left: 24px;
   border: 5px solid #fff;
 }
 .location-section .container .contents .location-contents .loc-content .loc-spec .specs {
@@ -1502,4 +1524,33 @@ footer .container .content hr {
 }
 .modal .container .modal-form .form .number .num {
   width: 75%;
+}
+
+.callModal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+.callModal .container .content .main-box {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1CE82;
+  padding: 24px 0;
+  z-index: 9999;
+}
+.callModal .container .content .main-box .image {
+  width: 200px;
+  margin: 24px 0;
+}
+.callModal .container .content .main-box .image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

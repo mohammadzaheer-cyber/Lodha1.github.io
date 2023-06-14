@@ -145,3 +145,10 @@
 .modal-show{
   display: flex !important;
 }
+
+
+/* call Modal */
+
+.call-show{
+  display: flex !important;
+}

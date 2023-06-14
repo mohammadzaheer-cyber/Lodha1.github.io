@@ -1,0 +1,38 @@
+.callModal{
+
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+    .container{
+
+        .content{
+
+            .main-box{
+                width: 750px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #E1CE82;
+                padding: 24px 0;
+                z-index: 9999;
+               
+                .image{
+                    width: 200px;
+                    margin: 24px 0;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

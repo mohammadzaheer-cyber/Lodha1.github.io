@@ -11,12 +11,14 @@
             background: rgba(0, 0, 0, 0.8);
             padding: 8px;
             padding-top: 40px;
+            padding-bottom: 40px;
             .heading {
                 padding-top: 16px;
 
                 h3 {
 
                     border-bottom: 1px solid #fff;
+                    display: inline-block;
 
                     span {
                         background: #D9D9D9;
@@ -46,6 +48,9 @@
             .content {
                 p {
                     color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
                 }
             }
         }
@@ -66,6 +71,7 @@
         background-image: url(../images/overview/ov1.webp);
         width: 100vw;
         height: 100vh;
+        padding-bottom: 764px;
 
 
         .container {
@@ -73,24 +79,28 @@
             position: relative;
             
             .contents {
-                width: 652px;
-                margin-top: 80px;
+                width: 736px;
+                margin-top: 64px;
                 position: absolute;
                 left: 160px;
-                padding: 16px 232px 153px 56px;
+                padding: 16px 232px 80px 56px;
                 display: none;
+
+                .heading{
+                    margin-top: 50px;
+                }
             }
 
             .image {
 
                 left: 599px;
                 position: absolute;
-                top: 265px;
-                width: 538px;
+                // top: 265px;
+                width: 570px;
                 display: none;
 
                 img {
-                    height: 360px;
+                    // height: 360px;
                 }
             }
         }

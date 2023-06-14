@@ -46,6 +46,7 @@
     background: url(../images/cta/cta.webp);
     // height: 100vh;
     background-repeat: no-repeat;
+    background-position: center;
 
     .container {
       .contents {
@@ -61,13 +62,17 @@
           align-items: center;
           font-size: 32px;
           padding: 150px 0;
+
+          div{
+            line-height: 48px;
+          }
         }
 
         button {
           width: 200px;
           height: 64px;
-          left: 124px !important;
-          top: 95px !important;
+          left: 70px !important;
+          // top: 95px !important;
         }
       }
     }

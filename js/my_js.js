@@ -110,6 +110,17 @@ closeModal.addEventListener('click', () => {
     modalform.classList.remove('modal-show');
 })
 
-// modalform.addEventListener('click', () => {
-//     modalform.classList.remove('modal-show');
-// })
+
+
+// Call Modal
+
+const main_ivr = document.querySelector('.main-ivr');
+const call_Modal = document.querySelector('.callModal');
+
+main_ivr.addEventListener('click', () => {
+    call_Modal.classList.toggle('call-show');
+});
+
+call_Modal.addEventListener('click', () => {
+call_Modal.classList.toggle('call-show');
+});

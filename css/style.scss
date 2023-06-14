@@ -1,6 +1,6 @@
 $primary-Color: #9B802E;
 $secondary-color: #D9D9D9;
-$primary-font: 'Hind', serif;
+$primary-font: 'Hind', sans-serif;
 
 
 
@@ -30,3 +30,4 @@ overflow-x: hidden;
 @import'../Partial-files/about-section';
 @import'../Partial-files/footer';
 @import'../Partial-files/modal';
+@import'../Partial-files/callModal';
